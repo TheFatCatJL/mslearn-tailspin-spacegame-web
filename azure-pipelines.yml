@@ -16,10 +16,10 @@ variables:
 
 steps:
 - task: UseDotNet@2
-  displayName: 'Use .NET Core SDK 2.1.000'
+  displayName: 'Use .NET Core SDK 2.1'
   inputs:
     packageType: sdk
-    version: 2.1.000
+    version: 2.1
 
 - task: Npm@1
   displayName: 'Run npm install'
