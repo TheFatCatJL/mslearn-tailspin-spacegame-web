@@ -16,10 +16,10 @@ variables:
 
 steps:
 - task: UseDotNet@2
-  displayName: 'Use .NET Core SDK 3.1.100'
+  displayName: 'Use .NET Core SDK 2.1.000'
   inputs:
     packageType: sdk
-    version: 3.1.100
+    version: 2.1.000
 
 - task: Npm@1
   displayName: 'Run npm install'
@@ -46,5 +46,5 @@ steps:
   displayName: 'Build the project - Release'
   inputs:
     command: 'build'
-    arguments: '--no-restore --configuration Release --framework netcoreapp3.1'
+    arguments: '--no-restore --configuration Release'
     projects: '**/*.csproj'
